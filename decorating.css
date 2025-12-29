@@ -9,13 +9,13 @@
 
 /* Background overlay */
 body::before {
-    content: "";
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/.vscode/Decorating_Rightpaint_Intro.webp");
+    background-image: url("images/Decorating_Rightpaint_Intro.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
