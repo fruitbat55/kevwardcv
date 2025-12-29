@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/europower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.18;
+    z-index: -2;
+}
+
+.navbar {
+
+  margin-bottom: 30px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+
+    
+}
+    
+
+
+.nav-link { 
+    margin-top: 5px;
+    font-family: 'DC Sans', sans-serif;
+    background-color: #07a31ccc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(1, 36, 7, 0.2);
+}
+
+    
+
+
+.nav-link:hover {
+    background-color: rgba(132, 172, 139, 0.2);
+    color: #208d12cc;
+    transform: scale(1.1);
+}
+
+
+.content {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(211, 241, 205, 0.8);
+    margin-top: 80px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #208d12cc;
+    box-shadow: 20px 12px rgba(1, 37, 13, 0.3);
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: #023d0c;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: #023d0c;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #023d0c;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+h3 {font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: #023d0c;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #023d0c;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: #023d0c;
+}
+
+section {
+    font-family: 'DC sans', sans-serif;
+    font-weight: bolder;
+    color: #023d0c;
+    margin-bottom: 25px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        margin: 5px;
+        padding: 12px 16px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+    
+    .content {
+        margin: 10px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-link {
+        width: 90%;
+        margin: 3px 0;
+        text-align: center;
+    }
+    
+    .content {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    p, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

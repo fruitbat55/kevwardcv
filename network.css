@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Ethernet-cabls.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.20;
+    z-index: -2;
+}
+
+.navbar {
+    background-color: none;
+    padding: 15px;
+    margin-top: 20px;
+    position: sticky;
+    top: 10;
+    z-index: 100;
+}
+
+.nav-link {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    margin-top: 5px;
+    font-family: 'DC Sans', sans-serif;
+    background-color: #210af3cc;
+    color: rgb(208, 243, 13);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(32, 0, 0, 0.3);
+    border: 1px solid rgba(36, 1, 1, 0.2);
+}
+
+.nav-link:hover {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    background-color: rgba(208, 243, 13);
+    color:#1407cacc;
+    transform: scale(1.1);
+    
+}
+
+.content {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(221, 219, 241, 0.12);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #1407cacc;
+    box-shadow: 0px 10px 15px;
+
+}
+
+h1 {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: #1407cacc;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #1407cacc;
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 4px solid rgba(208, 243, 13);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #1407cacc;
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        margin: 5px;
+        padding: 12px 16px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+    
+    .content {
+        margin: 10px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-link {
+        width: 90%;
+        margin: 3px 0;
+        text-align: center;
+    }
+    
+    .content {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    p, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

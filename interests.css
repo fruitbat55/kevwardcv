@@ -1,0 +1,394 @@
+.title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Image link container */
+header a {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+header a:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.img {  
+  background-color: rgba(51, 48, 240, 0.7);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #667eea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.img:hover {
+  border-color: #4f51f5;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(79, 81, 245, 0.3);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: none;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: left;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: white solid 2px;
+    box-shadow: black 0 4px 8px;
+    font-weight: bolder;
+    font-family: 'DS sans', sans-serif;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    background-color: rgba(51, 48, 240, 0.3);
+}
+
+.nav-link:hover {
+    background-color: rgba(7, 217, 245, 0.9);
+    transform: scale(1.05);
+}
+
+/* Basic Element Styles */
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    background-color: rgba(51, 48, 240, 0.3);
+    border: rgb(221, 234, 235) solid 2px;
+    color:rgb(221, 234, 235);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border-radius: 18px;
+}
+
+h2 {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba(51, 48, 240, 0.3);
+    border: rgb(221, 234,235) solid 2px;
+    border-radius: 18px;
+    color: rgb(221, 234, 235);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+}
+
+h3 {
+    font-family: 'DS Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(221, 234, 235);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(221, 234, 235);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+ul {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    margin-left: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+
+li {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    color: rgb(221, 234, 235);
+    text-align: center;
+}
+
+section {
+    font-family: 'DS Sans', sans-serif;
+    font-family: bolder;
+    color: rgb(221, 234, 235);
+    font-size: large;
+    margin-bottom: 25px;
+    background-color: rgba(51, 48, 240, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(243, 243, 248, 0.925);
+}
+
+/* Footer and Contact Styles */
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(51, 48, 240, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(243, 243, 248, 0.925);
+    text-align: center;
+}
+
+.contact-details {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(221, 234, 235);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+footer a {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(79, 81, 245);
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-family: 'DC Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(221, 234, 235);
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.body {
+  /* The background image is rendered in the ::before pseudo-element so we can control its opacity
+     without affecting the page content. Keep the body positioned so the pseudo-element can be fixed. */
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Full-page background layer with adjustable opacity */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Use a relative project path so the image stays with the site */
+  background-image: url("images/chess.jpeg");
+  /* make the image span the full viewport width while preserving aspect ratio */
+  background-size: 100vw auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* place the background behind the page content but above the root background
+    (z-index:-1 can end up behind the html/body background when viewing via file://) */
+  z-index: -1; /* behind .content (which has z-index:1) */
+
+  pointer-events: none;/* allow clicks through the background */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    padding-top: 40px;
+}
+
+
+
+.ul-list {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  text-align: left;
+  color: rgb(221, 234, 235);
+  border-style: solid;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 #2023ee99, 0 6px 40px 0 #f030e6b3;
+  margin-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* place bullets outside the content box and reserve space */
+  list-style-position: outside;
+  padding-left: 40px;
+}
+
+.ul-list-b {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  text-align: right;
+  color: rgb(221, 234, 235);
+  margin-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* place bullets outside the content box and reserve space */
+  list-style-position: outside;
+  padding-left: 40px;
+}
+
+/* Link styles for the employment list */
+.ul-list a {
+  color: #4f51f5;
+  text-decoration: none;
+  display: block; /* makes the whole row clickable */
+  /* remove top/bottom padding from the link and apply it to the li so bullets align */
+  padding: 0;
+}
+
+.ul-list li {
+  padding: 6px 0; /* vertical spacing per item */
+  line-height: 1.4;
+}
+.ul-list a:visited {
+  /* slightly muted/darker color for visited links */
+  color: rgb(221, 234, 235);
+}
+.ul-list a:hover,
+.ul-list a:focus {
+  color: #f030e6b3; /* change link text color on hover */
+  background: none; /* explicitly remove any background */
+  outline: none;
+  box-shadow: none; /* explicitly remove any shadow */
+}
+
+.h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(221, 234, 235);
+  text-align: center;
+  border-style: solid;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(115, 18, 243, 0.6), 0 6px 40px 0 rgba(115, 18, 243, 0.7);
+  border-width: 2px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.about-me,.description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 234, 235);
+  margin: 0 100px 20px 100px;
+  text-align: center;
+
+}
+
+.li, .maintenance-dept {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    text-decoration: overline;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .profile-image {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    .ul-list {
+        padding-left: 20px;
+    }
+    
+    .ul-list li {
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    
+    .about {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .profile-image {
+        max-width: 120px;
+    }
+    
+    .ul-list {
+        padding-left: 15px;
+    }
+    
+    .ul-list li {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    
+    .about {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .li, .maintenance-dept {
+        font-size: 1.2rem;
+    }
+}
