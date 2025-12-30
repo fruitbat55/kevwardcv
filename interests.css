@@ -44,10 +44,9 @@ body {
 
 /* Navigation Styles */
 .navbar {
-    background-color: none;
-    padding: 20px;
+    padding: 15px;
     position: sticky;
-    top: 0;
+    margin-top: 15px;
     z-index: 100;
     text-align: left;
 }
@@ -216,9 +215,9 @@ body::before {
   bottom: 0;
   /* Use a relative project path so the image stays with the site */
   background-image: url("images/chess.jpeg");
-  /* make the image span the full viewport width while preserving aspect ratio */
-  background-size: 100vw auto;
-  background-position: center top;
+  /* make the image cover the full screen */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   /* place the background behind the page content but above the root background
     (z-index:-1 can end up behind the html/body background when viewing via file://) */
