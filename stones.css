@@ -23,7 +23,6 @@ body::before {
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     z-index: -1;
     margin-bottom: 20px;
 }

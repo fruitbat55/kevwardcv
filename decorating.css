@@ -19,19 +19,17 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     opacity: 0.3;
     z-index: -1;
 }
 
 .navbar {
-    margin-bottom: 30px;
-    position: fixed;
-    top: 10px;
-    left: 20px;
+    padding: 15px;
+    position: sticky;
+    margin-top: 15px;
     display: flex;
     gap: 15px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .nav-link {

@@ -19,12 +19,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/Ethernet-cabls.png');
+    background-image: url('images/network.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.20;
+    opacity: 0.2;
     z-index: -2;
 }
 

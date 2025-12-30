@@ -220,7 +220,6 @@ body::before {
   background-size: 100vw auto;
   background-position: center top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   /* place the background behind the page content but above the root background
     (z-index:-1 can end up behind the html/body background when viewing via file://) */
   z-index: -1; /* behind .content (which has z-index:1) */
